@@ -84,7 +84,7 @@ async function run() {
       res.send(result)
     })
     
-    
+                                        
      
     app.get('/TouristsSpot/:id',async(req,res)=>{
       const id=req.params.id
@@ -100,7 +100,7 @@ async function run() {
       const updateSpot=req.body   
 console.log(updateSpot); 
       const spot ={
-        $set:{
+        $set:{ 
           tourists_spot_name:updateSpot.tourists_spot_name,
           country_Name:updateSpot.country_Name,
           location:updateSpot.location,
