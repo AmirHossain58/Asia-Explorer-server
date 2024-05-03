@@ -97,8 +97,8 @@ async function run() {
       console.log(id);
       const filter={_id:new ObjectId(id)}
       const options={upsert :true}
-      const updateSpot=req.body
-console.log(updateSpot);
+      const updateSpot=req.body   
+console.log(updateSpot); 
       const spot ={
         $set:{
           tourists_spot_name:updateSpot.tourists_spot_name,
